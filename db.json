@@ -370,5 +370,40 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua Radialista Antônio Bárbara",
+      "number": "57",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "greensandwich"
+        },
+        {
+          "quantity": 2,
+          "menuId": "zlasagna"
+        },
+        {
+          "quantity": 1,
+          "menuId": "ceasar"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua Radialista Antônio Bárbara",
+      "number": "57",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "zlasagna"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }

@@ -17,6 +17,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 @NgModule({
@@ -35,7 +36,9 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
+    //Preload que carrega os modulos em background ao iniciar a aplicacao
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules}),
     //forRoot adicionado para carregar também o sharedModule com os providers (ModuleWithProviders)
     SharedModule.forRoot()

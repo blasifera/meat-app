@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 
 
@@ -40,7 +40,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
+    HttpClientModule,
     //Preload que carrega os modulos em background ao iniciar a aplicacao
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules}),
     //forRoot adicionado para carregar também o sharedModule com os providers (ModuleWithProviders)

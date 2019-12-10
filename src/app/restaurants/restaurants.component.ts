@@ -28,7 +28,7 @@ import { Observable } from 'rxjs/Observable'
         "max-height": "70px",
         "margin-top": "20px"
       })),
-      transition('* => *', animate('250ms 0 ease-in-out'))      
+      transition('* => *', animate('250ms 0s ease-in-out'))      
     ])
   ]
 })

@@ -7,7 +7,7 @@ import { Http, Headers, RequestOptions } from "@angular/http";
 import { MEAT_API } from "app/app.api";
 
 @Injectable()
-export class orderService {
+export class OrderService {
 
   constructor(private cartService: ShoppingCartService,
               private http: Http) {}

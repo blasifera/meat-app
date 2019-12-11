@@ -23,7 +23,7 @@ export const ROUTES: Routes = [
     {path: 'order-summary', component: OrderSummaryComponent},
     {path: 'about', loadChildren: './about/about.module#AboutModule'},
     {path:'order', loadChildren: './order/order.module#OrderModule',
-     canLoad: [LoggedInGuard]},
+     canLoad: [LoggedInGuard], canActivate: [LoggedInGuard]},
     //WildCard route
     {path:'**', component: NotFoundComponent}
 ]

@@ -141,7 +141,12 @@ Dependências dos pacotes que devem ficar em package.json:
     "webdriver-manager": "12.0.6"
   }
 ```
+## Backend server (necessario instalar o nodemon globalmente)
+* necessario verificar se o watch do vscode esta olhando para o compileOnSave do tsconfig.json
+* nodemon --watch backend backend/dist/server.js
+
 
 ## Créditos
 
 Todas as imagens usadas na aplicação são pertencentes a freepik.com
+
